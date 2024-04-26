@@ -12,6 +12,16 @@
 
 # Projeto Marketing
 
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/1e0c9a64-0993-4b46-8087-ee78c3bbff79)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/d0dc4535-7229-41b2-8ecf-6acb70be5cc8)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/cf1e7297-f2e5-4f38-8bbd-744fb1c81ef5)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/2c063c89-431d-4007-8a5a-2b5e5acad7cf)
+
+
+
 
 
 
