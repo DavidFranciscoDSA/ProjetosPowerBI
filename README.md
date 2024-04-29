@@ -34,6 +34,18 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/a45ccf41-4e02-4905-8184-b08149414812)
 
+# Projeto Financeiro
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/091ac59d-c28d-42a6-a5f5-636b04afb189)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/2397e7ff-3fa1-4d91-b480-e0214e3d32d5)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/9aec33c8-d3f4-473c-9fae-8e6ffe9442aa)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/621e415c-4203-4f8c-85ff-68dd006ec810)
+
+
+
 
 
 
