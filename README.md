@@ -30,7 +30,7 @@
 
 # Projeto Logística
 
-![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/8a5a4a9d-ee7f-4dd8-80ac-212bece3d1be)
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/f35eb22a-c953-4fd5-9ebc-955d62b0b715)
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/a45ccf41-4e02-4905-8184-b08149414812)
 
