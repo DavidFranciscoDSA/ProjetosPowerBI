@@ -44,6 +44,15 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/621e415c-4203-4f8c-85ff-68dd006ec810)
 
+# Projeto contabilidade
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/1b565789-239d-473b-933f-1eb3e509f6ce)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/6ba0d6ff-3c98-4c84-9717-2c448dbe34a7)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/6737b6a9-610a-4ed4-93b9-6bd1856cd099)
+
+
 
 
 
