@@ -59,6 +59,16 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/281a508c-5360-4252-9397-384c5164c4bc)
 
+# Projeto Ações NASDAQ
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/a268f3d5-ef5b-45bf-99f3-967aaee5ab42)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/d320f3ba-e792-4ba7-a1fc-a75f06611ca5)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/3da6cdf4-a7c6-4b07-8703-b83d78c5de21)
+
+
+
 
 
 
