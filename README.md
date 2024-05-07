@@ -26,6 +26,7 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/960ac9a6-024f-4d32-827f-096a11a8ca3f)
 
+
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/9bf23c07-41f4-4864-b274-b181b2692f9d)
 
 # Projeto Logística
@@ -51,6 +52,12 @@
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/6ba0d6ff-3c98-4c84-9717-2c448dbe34a7)
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/6737b6a9-610a-4ed4-93b9-6bd1856cd099)
+
+# Ações B3
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/6bf7a7ae-f2c1-4e02-9b1f-bbc885e3444c)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/281a508c-5360-4252-9397-384c5164c4bc)
 
 
 
