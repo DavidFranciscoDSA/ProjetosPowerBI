@@ -1,0 +1,22 @@
+*/Calculo de moda*/
+ModaAltura = 
+VAR TabelaFrequencia = 
+    SUMMARIZE(
+        dados_pacientes,
+        dados_pacientes[altura(cm)],
+        "Frequencia", COUNT(dados_pacientes[altura(cm)])
+    )
+VAR MaiorFrequencia =
+    MAXX(
+        TabelaFrequencia,
+        [Frequencia]
+    )  
+RETURN
+    CONCATENATEX(
+        FILTER(TabelaFrequencia, [Frequencia] = MaiorFrequencia),
+        dados_pacientes[altura(cm)],
+        ", "
+    )
+	
+/*Calculo do coeficiente de variação*/
+CVpeso = DIVIDE(STDEV.P(dados_pacientes[peso(kg)]),AVERAGE(dados_pacientes[peso(kg)])) * 100 
