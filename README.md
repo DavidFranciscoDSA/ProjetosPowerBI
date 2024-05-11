@@ -67,6 +67,10 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/3da6cdf4-a7c6-4b07-8703-b83d78c5de21)
 
+# Estatística descritiva com BI
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/1831b3bf-e078-4a8e-822a-efd4c5c76528)
+
 
 
 
