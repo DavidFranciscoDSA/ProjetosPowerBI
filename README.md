@@ -71,6 +71,11 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/1831b3bf-e078-4a8e-822a-efd4c5c76528)
 
+# Clientes após limpeza e tratamento dos dados
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/9cb86d48-00f4-46f4-be9f-098b56debd3c)
+
+
 
 
 
