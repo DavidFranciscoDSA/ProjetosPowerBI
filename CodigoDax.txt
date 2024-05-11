@@ -20,3 +20,14 @@ RETURN
 	
 /*Calculo do coeficiente de variação*/
 CVpeso = DIVIDE(STDEV.P(dados_pacientes[peso(kg)]),AVERAGE(dados_pacientes[peso(kg)])) * 100 
+
+/*Coluna Condicional*/
+Estado = 
+SWITCH (
+    Clientes[Cidade],
+    "São Paulo", "SP",
+    "Rio de Janeiro", "RJ",
+    "Belo Horizonte", "MG",
+    "Porto Alegre", "RS",
+    BLANK() // Valor padrão caso a cidade não esteja na lista
+)
