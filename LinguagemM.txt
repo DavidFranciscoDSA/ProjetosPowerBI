@@ -1,0 +1,34 @@
+let
+    Fonte = Csv.Document(File.Contents("C:\Users\david\Desktop\ESTUDOS\2-DSA\Microsoft Power BI Para Business Intelligence e Data Science\Parte 2 - DS-SQL-ML-IA-Power Plataform\13-Manipulacao de dados com Power Query M language\Clientes.csv"),[Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ID_Cliente", type text}, {"Idade", type text}, {"Peso", Int64.Type}, {"Altura", Int64.Type}, {"Estado Civil", type text}, {"Estado", type text}, {"Limite de Credito", Int64.Type}, {"Valor Desconto", Int64.Type}, {"Valor Compra", Int64.Type}, {"Tipo de Cliente", type text}}),
+
+    //Substituir valor
+    #"Substituir valor" = Table.ReplaceValue(#"Tipo Alterado", "?","45", Replacer.ReplaceText,{"Idade"}),
+
+    // Ajustando o tipo da variável
+    #"Tipo Ajustado" = Table.TransformColumnTypes(#"Substituir valor",{{"Idade", Int64.Type}}),
+
+    //Remoção de coluna
+    #"Remover coluna" = Table.RemoveColumns(#"Tipo Ajustado",{"Estado Civil"}),
+
+    //Adicionar coluna
+    #"Adicionar Coluna" = Table.AddColumn(#"Remover coluna", "Valor final", each [Valor Compra] - [Valor Desconto]),
+
+    //Dividir coluna
+    #"Dividir Coluna pela posição" = Table.SplitColumn(#"Adicionar Coluna", "ID_Cliente", Splitter.SplitTextByPositions({0,4}, false), {"ID_Cliente.1","ID_Cliente.2"}),
+    #"Coluna Dividida" = Table.TransformColumnTypes(#"Dividir Coluna pela posição",{{"ID_Cliente.1", type text},{"ID_Cliente.2", Int64.Type}}),
+
+    // Ajustando nome de coluna
+    #"Colunas Renomeadas" = Table.RenameColumns(#"Coluna Dividida",{{"ID_Cliente.1", "Codigo"}, {"ID_Cliente.2", "ID"}}),
+
+    // Coluna Condicional
+    #"Coluna Condicional Adicionada" = Table.AddColumn(#"Colunas Renomeadas", "% Desconto Especial", each if [Tipo de Cliente] = "Bronze" then 5 
+                                                                                                     else if [Tipo de Cliente] = "Prata" then 10 
+                                                                                                     else if [Tipo de Cliente] = "Ouro" then 15 
+                                                                                                     else if [Tipo de Cliente] = "Diamante" then 20 else 0),
+                                                                                                     
+    // Ajustando a escala dos dados com Transformação Logarítmica
+    #"Logaritmo de Base 10 Calculado" = Table.TransformColumns(#"Coluna Condicional Adicionada",{{"Limite de Credito", Number.Log10, type number}})
+in
+    #"Logaritmo de Base 10 Calculado"
