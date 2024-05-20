@@ -79,6 +79,13 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/71997e37-add2-45a7-a291-219e2c69b9c9)
 
+# Projeto Lincando o resultado de cluster de machine learning com o Power BI
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/faea27f0-e6e0-4f74-9a25-4af2649c868e)
+
+
+
+
 
 
 
