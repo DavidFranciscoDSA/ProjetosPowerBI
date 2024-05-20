@@ -1,0 +1,141 @@
+-- Consulta por colunas
+SELECT
+  ID_Cliente,
+  Nome_Cliente,
+  Cidade
+FROM TB_DSA_CLIENTES;
+
+-- Consulta por colunas com limites de linha
+SELECT
+  ID_Cliente,
+  Nome_Cliente,
+  Cidade,
+  segmento
+FROM TB_DSA_CLIENTES
+LIMIT 3;
+
+-- Distinct
+SELECT DISTINCT segmento
+FROM TB_DSA_CLIENTES;
+
+--WHERE
+SELECT * 
+FROM TB_DSA_PEDIDOS
+WHERE Ano = 2014;
+
+--WHERE + AND
+SELECT * 
+FROM TB_DSA_PEDIDOS
+WHERE Ano = 2014
+AND Prioridade_Pedido = 'Critico'
+AND Mes = 'maio'
+AND dia = 27;
+
+--WHERE + OR
+SELECT * 
+FROM TB_DSA_PEDIDOS
+WHERE Ano = 2014
+OR Mes = 'maio';
+
+--WHERE + AND + OR
+SELECT * 
+FROM TB_DSA_PEDIDOS
+WHERE Ano = 2014
+AND Prioridade_Pedido = 'Critico'
+AND Mes = 'maio'
+OR Mes = 'junho'
+AND dia = 27;
+
+-- BETWEEN
+SELECT *
+FROM TB_DSA_VENDAS
+WHERE Valor_Venda 
+BETWEEN 3000
+AND 3100;
+
+-- LIKE
+SELECT *
+FROM TB_DSA_PRODUTOS
+WHERE Nome_Produto
+LIKE '%Clock%';
+
+-- IN
+SELECT *
+FROM TB_DSA_PRODUTOS
+WHERE Categoria IN ('Moveis', 'Tecnologia');
+
+-- NOT IN
+SELECT *
+FROM TB_DSA_PRODUTOS
+WHERE Categoria NOT IN ('Moveis', 'Tecnologia');
+
+-- ORDER BY
+SELECT *
+FROM TB_DSA_PRODUTOS
+ORDER BY Nome_Produto;
+
+-- Min, Max, AVG, Count, SUM
+SELECT 
+    MIN(Valor_Venda) as 'Menor venda', 
+    MAX(Valor_Venda) as 'Maior venda',
+    AVG(Valor_Venda) as 'Média',
+    COUNT(Valor_Venda) as 'Vendas realizadas',
+    SUM(Valor_Venda) as 'Valor Total'
+FROM TB_DSA_VENDAS;
+
+-- Min, Max, AVG, Count, SUM + GROUP BY
+SELECT Produto,
+    MIN(Valor_Venda) as 'Menor venda', 
+    MAX(Valor_Venda) as 'Maior venda',
+    AVG(Valor_Venda) as 'Média',
+    COUNT(Valor_Venda) as 'Vendas realizadas',
+    SUM(Valor_Venda) as 'Valor Total'
+FROM TB_DSA_VENDAS
+GROUP BY Produto;
+
+-- Min, Max, AVG, Count, SUM + GROUP BY + ROUND
+SELECT Produto,
+    ROUND(MIN(Valor_Venda),2) as 'Menor venda', 
+    ROUND(MAX(Valor_Venda),2) as 'Maior venda',
+    ROUND(AVG(Valor_Venda),2) as 'Média',
+    COUNT(Valor_Venda) as 'Vendas realizadas',
+    ROUND(SUM(Valor_Venda),2) as 'Valor Total'
+FROM TB_DSA_VENDAS
+GROUP BY Produto;
+
+-- Min, Max, AVG, Count, SUM + GROUP BY + ROUND + desc
+SELECT Produto,
+    ROUND(MIN(Valor_Venda),2) as 'Menor venda', 
+    ROUND(MAX(Valor_Venda),2) as 'Maior venda',
+    ROUND(AVG(Valor_Venda),2) as 'Média',
+    COUNT(Valor_Venda) as 'Contagem',
+    ROUND(SUM(Valor_Venda),2) as 'Valor Total'
+FROM TB_DSA_VENDAS
+GROUP BY Produto
+ORDER BY Contagem DESC;
+
+--------- Duas tabelas ----------
+SELECT Nome_Produto,
+    ROUND(MIN(Valor_Venda),2) as 'Menor venda', 
+    ROUND(MAX(Valor_Venda),2) as 'Maior venda',
+    ROUND(AVG(Valor_Venda),2) as 'Média',
+    COUNT(Valor_Venda) as 'Contagem',
+    ROUND(SUM(Valor_Venda),2) as 'Valor Total'
+FROM TB_DSA_VENDAS, TB_DSA_PRODUTOS
+WHERE TB_DSA_VENDAS.Produto = TB_DSA_PRODUTOS.ID_Produto
+GROUP BY Produto
+ORDER BY Contagem DESC;
+
+--------- JOIN ----------
+SELECT Nome_Produto,
+    ROUND(MIN(Valor_Venda),2) as 'Menor venda', 
+    ROUND(MAX(Valor_Venda),2) as 'Maior venda',
+    ROUND(AVG(Valor_Venda),2) as 'Média',
+    COUNT(Valor_Venda) as 'Contagem',
+    ROUND(SUM(Valor_Venda),2) as 'Valor Total',
+    Ano
+FROM TB_DSA_VENDAS, TB_DSA_PRODUTOS, TB_DSA_PEDIDOS
+WHERE TB_DSA_VENDAS.Produto = TB_DSA_PRODUTOS.ID_Produto
+AND TB_DSA_VENDAS.Pedido = TB_DSA_PEDIDOS.ID_Pedido
+GROUP BY Produto, Ano
+ORDER BY Contagem DESC;
