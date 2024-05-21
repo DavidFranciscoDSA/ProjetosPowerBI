@@ -83,6 +83,21 @@
 
 ![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/faea27f0-e6e0-4f74-9a25-4af2649c868e)
 
+# Projeto Análise temporal em uma linha de produção
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/b5ac306c-c300-4466-8d53-52cc6e33829a)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/8727701a-d3fe-401c-9004-4f8885097e00)
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/3d69aac8-1ad5-46ae-9640-80618e5270f5)
+
+<p>Anômalia com uma confiabilidade de 95%</p>
+
+![image](https://github.com/DavidFranciscoDSA/ProjetosPowerBI/assets/167797737/e670c57e-aed1-4405-b51b-262668793b6d)
+
+
+
+
 
 
 
