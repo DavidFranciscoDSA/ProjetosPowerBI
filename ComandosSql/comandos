@@ -139,3 +139,25 @@ WHERE TB_DSA_VENDAS.Produto = TB_DSA_PRODUTOS.ID_Produto
 AND TB_DSA_VENDAS.Pedido = TB_DSA_PEDIDOS.ID_Pedido
 GROUP BY Produto, Ano
 ORDER BY Contagem DESC;
+
+-- update 
+UPDATE TB_DSA_CLIENTES
+   SET ID_Cliente = 'ID_Cliente',
+       Nome_Cliente = 'Nome_Cliente',
+       Cidade = 'Cidade',
+       Estado = 'Estado',
+       Pais = 'Pais',
+       Regiao = 'Regiao',
+       Mercado = 'Mercado',
+       Segmento = 'Segmento'
+ WHERE ID_Cliente = 'ID_Cliente' AND 
+       Nome_Cliente = 'Nome_Cliente' AND 
+       Cidade = 'Cidade' AND 
+       Estado = 'Estado' AND 
+       Pais = 'Pais' AND 
+       Regiao = 'Regiao' AND 
+       Mercado = 'Mercado' AND 
+       Segmento = 'Segmento';
+
+
+
